@@ -18,4 +18,11 @@
 			"remote": true,
 		},
 	],
+	"kv_namespaces": [
+		{
+			"binding": "CACHE",
+			"id": "6e84ea07c9384a258e4f3dd6a2c7e07b",
+			"remote": true,
+		},
+	],
 }
