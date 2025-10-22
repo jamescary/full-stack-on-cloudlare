@@ -140,4 +140,3 @@ You can customize your Cloudflare Worker deployment by editing the `wrangler.tom
 - [tRPC Documentation](https://trpc.io/docs)
 - [Cloudflare Workers Documentation](https://developers.cloudflare.com/workers/)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Better-Auth Documentation](https://better-auth.com/docs)
