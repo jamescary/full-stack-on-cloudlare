@@ -13,7 +13,7 @@ app.get('/link-click/:accountId', async (c) => {
 	return await stub.fetch(c.req.raw);
 });
 
-app.get('/:id', async (c) => {
+app.get('/r/:id', async (c) => {
 	const id = c.req.param('id');
 
 	const linkInfo = await getRoutingDestinations(c.env, id);
