@@ -10,12 +10,18 @@
   "assets": {
     "binding": "ASSETS",
     "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/auth/*", "/trpc/*", "/click-socket"],
   },
   "observability": {
     "enabled": true,
   },
   "env": {
     "stage": {
+      "routes": [{ "custom_domain": true, "pattern": "stage.cf.jcar.space" }],
+      "vars": {
+        "VITE_BASE_HOST": "stage.cf.jcar.space",
+        "CLOUDFLARE_ENV": "stage",
+      },
       "d1_databases": [
         {
           "binding": "DB",
@@ -32,6 +38,11 @@
       ],
     },
     "production": {
+      "routes": [{ "custom_domain": true, "pattern": "cf.jcar.space" }],
+      "vars": {
+        "VITE_BASE_HOST": "cf.jcar.space",
+        "CLOUDFLARE_ENV": "production",
+      },
       "d1_databases": [
         {
           "binding": "DB",
