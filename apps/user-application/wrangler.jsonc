@@ -16,6 +16,9 @@
   },
   "env": {
     "stage": {
+      "vars": {
+        "CLOUDFLARE_ENV": "stage",
+      },
       "d1_databases": [
         {
           "binding": "DB",
@@ -32,6 +35,9 @@
       ],
     },
     "production": {
+      "vars": {
+        "CLOUDFLARE_ENV": "production",
+      },
       "d1_databases": [
         {
           "binding": "DB",
