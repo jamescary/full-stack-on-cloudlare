@@ -46,7 +46,7 @@ function RouteComponent() {
     try {
       await navigator.clipboard.writeText(text);
       toast.success("Link copied to clipboard");
-    } catch (err) {
+    } catch {
       toast.error("Failed to copy link");
     }
   };

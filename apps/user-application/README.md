@@ -102,7 +102,6 @@ npm run build
 npm run deploy
 ```
 
-
 This will deploy your application to your Cloudflare Workers account. Make sure you have configured Wrangler with your Cloudflare account credentials.
 
 ### Configuration
