@@ -44,7 +44,7 @@ function RouteComponent() {
     try {
       new URL(string);
       return true;
-    } catch (_) {
+    } catch {
       return false;
     }
   };

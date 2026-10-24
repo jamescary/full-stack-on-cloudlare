@@ -3,12 +3,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --port 3000 --mode development",
-    "start": "vite --port 3000",
-    "build": "vite build && tsc",
-    "production:build": "vite build --mode production && tsc",
-    "serve": "vite preview",
-    "test": "vitest run",
+    "dev": "vp dev --port 3000 --mode development",
+    "start": "vp dev --port 3000",
+    "build": "vp build && tsc",
+    "production:build": "vp build --mode production && tsc",
+    "serve": "vp preview",
+    "test": "vp test run",
+    "lint": "vp lint",
+    "format": "vp fmt",
+    "format:check": "vp fmt --check",
+    "check": "vp check",
     "cf-typegen": "wrangler types --env-interface Env --env stage",
     "stage:deploy": "npm run build && wrangler deploy",
     "production:deploy": "npm run production:build && wrangler deploy"
@@ -80,8 +84,8 @@
     "@vitejs/plugin-react": "^6.1.2",
     "jsdom": "^26.1.0",
     "typescript": "^5.8.3",
-    "vite": "^8.3.5",
-    "vitest": "^5.0.5",
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.4.0",
+    "vite-plus": "1.4.0",
     "web-vitals": "^4.2.4",
     "wrangler": "^4.152.0"
   }
